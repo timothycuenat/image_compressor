@@ -1,7 +1,5 @@
 # Image Compression Script
 
----
-
 ## Table des Matières
 - [Introduction](#introduction)
 - [Fonctionnalités](#fonctionnalités)
