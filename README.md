@@ -2,10 +2,6 @@
 
 ---
 
-![License](https://img.shields.io/github/license/yourusername/image-compression-script)
-![Bash Version](https://img.shields.io/badge/bash-5.0+-informational)
-![ImageMagick](https://img.shields.io/badge/ImageMagick-Required-blue)
-
 ## Table des Matières
 - [Introduction](#introduction)
 - [Fonctionnalités](#fonctionnalités)
