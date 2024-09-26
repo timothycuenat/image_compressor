@@ -1,5 +1,7 @@
 # Image Compression Script
 
+---
+
 ![License](https://img.shields.io/github/license/yourusername/image-compression-script)
 ![Bash Version](https://img.shields.io/badge/bash-5.0+-informational)
 ![ImageMagick](https://img.shields.io/badge/ImageMagick-Required-blue)
@@ -40,26 +42,36 @@ Bienvenue dans le **Image Compression Script**, un outil Bash conçu pour compre
 
 #### Sur Debian/Ubuntu :
 
-**sudo apt update**  
-**sudo apt install imagemagick bc**
+```bash
+sudo apt update 
+sudo apt install imagemagick bc
+```
 
 #### Sur macOS (avec Homebrew) :
 
-**brew install imagemagick bc**
+```bash
+brew install imagemagick bc
+```
 
 ## Installation
 
 1. **Cloner le Dépôt :**
 
-   **git clone https://github.com/yourusername/image-compression-script.git**
+```bash
+git clone https://github.com/yourusername/image-compression-script.git
+```
 
 2. **Naviguer dans le Répertoire :**
 
-   **cd image-compression-script**
+```bash
+cd image-compression-script
+```
 
 3. **Rendre le Script Exécutable :**
 
-   **chmod +x compress_images.sh**
+```bash
+chmod +x compress_images.sh
+```
 
 4. **Installer les Prérequis :**
 
@@ -67,18 +79,24 @@ Bienvenue dans le **Image Compression Script**, un outil Bash conçu pour compre
 
    - **Sur Debian/Ubuntu :**
 
-     **sudo apt update**  
-     **sudo apt install imagemagick bc**
+```bash
+sudo apt update**  
+sudo apt install imagemagick bc
+```
 
    - **Sur macOS (avec Homebrew) :**
 
-     **brew install imagemagick bc**
+```bash
+brew install imagemagick bc
+```
 
 5. **Vérifier l'Installation :**
 
    Pour vous assurer que tout est correctement configuré, vous pouvez exécuter le script avec l'option d'aide pour voir les instructions d'utilisation :
 
-   **./compress_images.sh -h**
+```bash
+./compress_images.sh -h
+```
 
    Cela devrait afficher la syntaxe d'utilisation et les options disponibles.
 
@@ -88,32 +106,38 @@ Exécutez le script en fournissant les répertoires d'entrée et de sortie, ains
 
 ### Syntaxe
 
-**./compress_images.sh -i <répertoire_entrée> -o <répertoire_sortie> -t <taille_cible_MB> [-c]**
+```bash
+./compress_images.sh -i <répertoire_entrée> -o <répertoire_sortie> -t <taille_cible_MB> [-c]
+```
 
 ### Options
 
-- **-i** : Répertoire contenant les images à compresser (**obligatoire**).
-- **-o** : Répertoire où les images compressées seront sauvegardées (**obligatoire**).
-- **-t** : Taille cible maximale des images en mégaoctets (**par défaut : 20 MB**).
-- **-c** : Option facultative pour copier les fichiers déjà inférieurs à la taille cible sans compression.
+- `-i` : Répertoire contenant les images à compresser (**obligatoire**).
+- `-o` : Répertoire où les images compressées seront sauvegardées (**obligatoire**).
+- `-t` : Taille cible maximale des images en mégaoctets (**par défaut : 20 MB**).
+- `-c` : Option facultative pour copier les fichiers déjà inférieurs à la taille cible sans compression.
 
 ### Exemples
 
 1. **Compression Basique :**
 
-   Compresser toutes les images dans **./images** et sauvegarder les images compressées dans **./compressed_images** avec une taille cible de **20 MB**.
+   Compresser toutes les images dans `./images` et sauvegarder les images compressées dans `./compressed_images` avec une taille cible de `20 MB`.
 
-   **./compress_images.sh -i ./images -o ./compressed_images -t 20**
+```bash
+./compress_images.sh -i ./images -o ./compressed_images -t 20
+```
 
 2. **Compression avec Copie des Fichiers Plus Petits :**
 
-   Même que ci-dessus, mais les fichiers déjà en dessous de **20 MB** seront copiés sans compression.
+   Même que ci-dessus, mais les fichiers déjà en dessous de `20 MB` seront copiés sans compression.
 
-   **./compress_images.sh -i ./images -o ./compressed_images -t 20 -c**
+```bash
+./compress_images.sh -i ./images -o ./compressed_images -t 20 -c
+```
 
 ## Gestion des Interruptions
 
-Le script gère les interruptions (par exemple, **Ctrl+C**) de manière élégante en affichant un message et en s'arrêtant proprement sans laisser de processus en suspens.
+Le script gère les interruptions (par exemple, `Ctrl+C`) de manière élégante en affichant un message et en s'arrêtant proprement sans laisser de processus en suspens.
 
 ## Contribution
 
@@ -132,9 +156,7 @@ Ce projet est sous licence MIT. Voir le **LICENSE** fichier pour plus de détail
 ## Auteur
 
 **Timothy Cuenat**  
-[GitHub](https://github.com/yourusername) | [LinkedIn](https://linkedin.com/in/yourprofile)  
+[GitHub](https://github.com/timothycuenat) | [LinkedIn](https://www.linkedin.com/in/timothy-cuenat-a71413190)  
 © 2024 Timothy Cuenat
 
 ---
-
-**Note :** Remplacez **yourusername** dans l'URL du dépôt par votre nom d'utilisateur GitHub réel.
